@@ -1,0 +1,7 @@
+<h1>Adicionar Pokémon ao Time {{ time.nome_time }}</h1>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Adicionar</button>
+</form>
+<a href="{% url 'detalhe_time' time.id %}">Voltar</a>

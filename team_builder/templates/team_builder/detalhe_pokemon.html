@@ -1,0 +1,9 @@
+<h1>{{ pokemon.nome }}</h1>
+<img src="{{ pokemon.imagem }}" alt="{{ pokemon.nome }}">
+{% if pokemon.apelido %}
+<p>Apelido: {{ pokemon.apelido }}</p>
+{% endif %}
+<p>Nível: {{ pokemon.nivel }}</p>
+<p>Tipos: {{ pokemon.tipo }}</p>
+<br>
+<a href="{% url 'detalhe_time' pokemon.time.id %}">Voltar</a>

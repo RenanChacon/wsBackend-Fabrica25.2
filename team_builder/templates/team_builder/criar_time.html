@@ -1,0 +1,7 @@
+<h1>Criar Novo Time</h1>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Criar Time</button>
+</form>
+<a href="{% url 'home' %}">Voltar</a>

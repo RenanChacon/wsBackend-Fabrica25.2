@@ -1,0 +1,9 @@
+<h1>Times Criados</h1>
+<ul>
+    {% for time in times %}
+        <li>
+            <a href="{% url 'detalhe_time' time.id %}">{{ time.nome_time }}</a>
+        </li>
+    {% endfor %}
+</ul>
+<a href="{% url 'home' %}">Voltar</a>

@@ -1,0 +1,20 @@
+<h1>Time: {{ time.nome_time }}</h1>
+<p>Jogo: {{ time.nome_jogo }}</p>
+<p>Ano de criação: {{ time.ano_criacao }}</p>
+
+<h2>Pokémons do time</h2>
+<ul>
+    {% for pokemon in pokemons %}
+        <li>
+            <a href="{% url 'detalhe_pokemon' pokemon.id %}">{{ pokemon.nome }}</a>
+            (<a href="{% url 'excluir_pokemon' pokemon.id %}">Excluir</a>)
+        </li>
+    {% empty %}
+        <p>Esse time ainda não tem pokémons.</p>
+    {% endfor %}
+</ul>
+
+<a href="{% url 'adicionar_pokemon' time.id %}">Adicionar Pokémon</a><br>
+<a href="{% url 'editar_time' time.id %}">Editar Time</a><br>
+<a href="{% url 'excluir_time' time.id %}">Excluir Time</a><br>
+<a href="{% url 'lista_times' %}">Voltar</a>
