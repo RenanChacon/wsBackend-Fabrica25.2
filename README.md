@@ -1,6 +1,6 @@
 # YourPokeTeam
 
-Um projeto Django usando templates para criar e gerenciar times de Pokémon, baseado nos times que o usuário zerou nos jogos. Utiliza a [PokeAPI](https://pokeapi.co/) para buscar os tipos e imagens dos Pokémons automaticamente.
+Um projeto Django usando templates para criar, armazenar e gerenciar times de Pokémon, baseado nos times que o usuário zerou nos jogos. Utiliza a [PokeAPI](https://pokeapi.co/) para buscar os tipos e imagens dos Pokémons automaticamente.
 
 Projeto feito para o desafio do workshop da fábrica de software.
 
@@ -127,6 +127,8 @@ Possui opções:
 - Excluir Pokémon
 - Voltar para a lista de times
 
+Exemplo:
+
 ![Time](imagens_exemplo/exibindo_time.png)
 
 ### Editar Time
@@ -158,13 +160,15 @@ Após adicionar, volta à página de detalhe do time.
 
 Mostra informações:
 
+- Nome
 - Imagem
 - Apelido (caso tenha)
-- Nome 
 - Nível
 - Tipos
 
 Opção de voltar para o time
+
+Exemplo:
 
 ![Pokemon](imagens_exemplo/exibindo_pokemon.png)
 
